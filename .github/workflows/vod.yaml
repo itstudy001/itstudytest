@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 코드 체크아웃
+      - name: 코드 CheckOut
         uses: actions/checkout@v3
       
       - name: AWS IAM 사용자 설정
