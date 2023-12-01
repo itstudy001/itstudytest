@@ -28,7 +28,7 @@ jobs:
       - name: Build                   # React Build
         run: yarn build
 
-      - name: 빌드한 파일 S3에 업로드
+      - name: 빌드한 파일 S3에 업로
         run: aws s3 sync build/ s3://itstudyfront
         env:
           AWS_ACCESS_KEY_ID: AKIAZKP7ENHO4ETWFLUX
