@@ -15,9 +15,9 @@ jobs:
       - name: AWS IAM 사용자 설정
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-access-key-id: AKIAZKP7ENHO4ETWFLUX
+          aws-secret-access-key: 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
+          aws-region: ap-northeast-2
       
       - name: 리액트 빌드
         run: |
@@ -25,10 +25,10 @@ jobs:
           npm run build
 
       - name: 빌드한 파일 S3에 업로드
-        run: aws s3 sync build/ s3://${{ secrets.AWS_S3_BUCKET }}
+        run: aws s3 sync build/ s3://itstudyfront
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: AKIAZKP7ENHO4ETWFLUX
+          AWS_SECRET_ACCESS_KEY: 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
 
 
 
