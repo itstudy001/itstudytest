@@ -2,7 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { Button, Img, Text } from "components";
+import { Img, Text } from "components"; // Button,
 import Sidebar11 from "components/Sidebar11";
 
 const FamilyHomeDarkPage = () => {
