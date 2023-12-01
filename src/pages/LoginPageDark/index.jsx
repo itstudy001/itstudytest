@@ -2,7 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { Button, Img, Input, Text } from "components";
+import { Button, Img } from "components"; //, Input, Text
 import C1LoginPageLightIdinput from "components/C1LoginPageLightIdinput";
 
 const LoginPageDarkPage = () => {
