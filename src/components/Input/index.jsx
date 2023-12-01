@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ErrorMessage } from "../../components/ErrorMessage";
+import { ErrorMessage } from "../ErrorMessage";
 
 const variants = { fill: { white_A700: "bg-white-A700" } };
 const shapes = { square: "rounded-none" };
