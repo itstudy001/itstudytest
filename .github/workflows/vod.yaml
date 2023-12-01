@@ -19,10 +19,14 @@ jobs:
           aws-secret-access-key: ecHgSO53ri6a5ilNjQqJPactFE+Js/E9Tujm4EVe
           aws-region: ap-northeast-2
       
-      - name: 리액트 빌드
-        run: |
-          npm install
-          npm run build
+      - name: Install Yarn
+        run: npm install -g yarn
+    
+      - name: Install dependencies     # yarn install 추가
+        run: yarn install
+    
+      - name: Build                   # React Build
+        run: yarn build
 
       - name: 빌드한 파일 S3에 업로드
         run: aws s3 sync build/ s3://itstudyfront
